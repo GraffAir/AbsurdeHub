@@ -6,7 +6,7 @@
       <div class="titre-boutons">
         <BoutonTitre to="/profil" texte="Commencer l'expédition"/>
         <BoutonTitre to="/profil" texte="Mon profil" />
-        <BoutonTitre to="/profil" texte="Carte des missions" />
+        <BoutonTitre to="/profil" texte="Mes missions" />
       </div>
     </div>
 
