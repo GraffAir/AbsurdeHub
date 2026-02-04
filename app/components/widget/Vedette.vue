@@ -1,10 +1,29 @@
 <script setup lang="ts">
+import Project from "~/components/widget/card/Project.vue";
+
+console.log("Test de Strapi");
+const { find } = useStrapi();
+
+interface Projet {
+  id: number,
+  titre: string,
+  createdAt: Date,
+  accroche: string,
+  description: string
+}
+
+console.log("Récupération des projets...");
+const response = await find<Projet>('projets');
+const projets: Array<Projet> = response.data;
+
 </script>
 
 <template>
   <div class="widget">
     <WidgetHeader titre="Vedette" />
-    <WidgetCardProject />
+    <div v-for="projet in projets">
+      <WidgetCardProject :nomProjet="projet.titre" />
+    </div>
   </div>
 </template>
 

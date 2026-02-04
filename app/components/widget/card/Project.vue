@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+defineProps<{nomProjet: String}>();
 </script>
 
 <template>
@@ -7,7 +7,7 @@
     <img src="/placeholder.png" alt="project illustration"/>
     <div class="content">
       <div>
-        <h2>Nom du projet</h2> <h3>- Product Owner</h3>
+        <h2>{{nomProjet}}</h2> <h3>- Product Owner</h3>
       </div>
       <div class="infos">
         <div class="info">
