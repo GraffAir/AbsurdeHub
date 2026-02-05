@@ -32,5 +32,9 @@ if (projet == undefined){
 </template>
 
 <style scoped>
-
+main {
+  background: rgba(0, 0, 0, 0.38);
+  margin:20px 10%;
+  padding: 40px;
+}
 </style>
