@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Project from "~/components/widget/card/Project.vue";
 
 console.log("Test de Strapi");
 const { find } = useStrapi();
@@ -14,9 +13,9 @@ const projets: Projet[] = response.data;
 
 <template>
   <div class="widget">
-    <WidgetHeader titre="Vedette" />
+    <WidgetHeader titre="Missions vedette" />
     <div v-for="projet in projets">
-      <WidgetCardProject :nomProjet="projet.titre" />
+      <WidgetCardProject :projet="projet" />
     </div>
   </div>
 </template>
