@@ -4,17 +4,11 @@ import Project from "~/components/widget/card/Project.vue";
 console.log("Test de Strapi");
 const { find } = useStrapi();
 
-interface Projet {
-  id: number,
-  titre: string,
-  createdAt: Date,
-  accroche: string,
-  description: string
-}
+
 
 console.log("Récupération des projets...");
 const response = await find<Projet>('projets');
-const projets: Array<Projet> = response.data;
+const projets: Projet[] = response.data;
 
 </script>
 
