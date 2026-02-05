@@ -26,7 +26,9 @@ if (projet == undefined){
 </script>
 
 <template>
-
+<main>
+  <MDC :value="projet.description" />
+</main>
 </template>
 
 <style scoped>
