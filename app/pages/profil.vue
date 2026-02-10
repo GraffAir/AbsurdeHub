@@ -5,9 +5,16 @@
 <template>
   <main>
     <section>
-      <h1>Rafaël Graff</h1>
+      <div class="profil-top">
+        <img src="/images/moi-chapeau.jpeg" alt="rafaël avec chapeau haut de forme et lunettes steampunk" />
+        <div>
+          <h1>Rafaël Graff</h1>
+          <p><span class="reverse-colors">Nom de code</span> HumainAbsurde</p>
+          <p>Créateur, développeur et concepteur avec une appétence pour la gestion de projet.</p>
+        </div>
+      </div>
       <p>
-        Créateur, développeur et concepteur avec une appétence pour la gestion de projet.
+
 
         J'ai toujours été de nature à initier et porter des projets moi-même, à innover, à créer des expériences.
         Ça va donc sans dire que, quand j'ai été introduit à l'informatique enfant,
@@ -34,10 +41,31 @@
 <style>
 main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  gap: 1%;
   margin: 40px;
 }
 
 main section {
-  width:50%;
+  min-width: 500px;
+  width: 45%;
+}
+
+.profil-top {
+  display: flex;
+  gap:10px;
+}
+
+.profil-top > img {
+  border-radius: 100%;
+}
+
+.reverse-colors {
+  color:var(--background-color);
+  background-color:var(--text-color);
+  padding: 5px 20px;
+  margin-right: 10px;
 }
 </style>

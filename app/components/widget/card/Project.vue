@@ -3,8 +3,6 @@ defineProps<{projet: Projet}>();
 </script>
 
 <template>
-  <article>
-    <NuxtLink :to="`/missions/${projet.url}`">
       <img src="/placeholder.png" alt="project illustration"/>
       <div class="content">
         <div>
@@ -25,29 +23,15 @@ defineProps<{projet: Projet}>();
           </div>
         </div>
       </div>
-    </NuxtLink>
-  </article>
 </template>
 
 <style scoped>
-article {
-  margin-top: 10px;
-  width:100%;
-  background: rgba(4, 4, 4, 0.49);
-}
-
-a {
-  padding: 10px;
-  display: flex;
-  text-decoration: none;
-}
-
-article :hover {
-  background: rgb(60, 60, 60);
-}
 
 img {
-  width:20%;
+  max-width:20%;
+  max-height: 100%;
+  height:auto;
+  width:auto;
 }
 
 .content {
@@ -74,7 +58,6 @@ h3 {
 }
 
 .infos {
-  width: 100%;
   display:flex;
   flex-direction: row;
   gap: 10px;

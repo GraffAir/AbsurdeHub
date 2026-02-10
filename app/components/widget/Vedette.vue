@@ -14,11 +14,32 @@ const projets: Projet[] = response.data;
 <template>
   <div class="widget">
     <WidgetHeader titre="Missions vedette" />
-    <div v-for="projet in projets">
+    <NuxtLink :to="`/missions/${projet.url}`" v-for="projet in projets" class="projet">
       <WidgetCardProject :projet="projet" />
-    </div>
+    </NuxtLink>
   </div>
 </template>
 
 <style scoped>
+.projet {
+  height:13vh;
+  width:100%;
+  display:flex;
+
+  padding:2%;
+
+  background: rgba(4, 4, 4, 0.49);
+  text-decoration: none;
+}
+
+.projet:hover {
+  background: rgb(60, 60, 60);
+}
+
+.widget {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
 </style>

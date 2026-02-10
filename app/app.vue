@@ -16,6 +16,7 @@ html {
   --primary-color: #EFD690;
   --accent-color: #7327d1;
   --background-color: #0C0537;
+  --text-color:white;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
-  color:white;
+  color:var(--text-color);
   font-family: "Ubuntu", serif;
 }
 </style>
