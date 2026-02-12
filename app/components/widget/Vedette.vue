@@ -28,12 +28,14 @@ const projets: Projet[] = response.data;
 
   padding:2%;
 
+  transition: all 0.3s ease;
   background: rgba(4, 4, 4, 0.49);
   text-decoration: none;
 }
 
 .projet:hover {
-  background: rgb(60, 60, 60);
+  background: rgb(54, 36, 62);
+  translate:2px;
 }
 
 .widget {

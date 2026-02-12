@@ -27,4 +27,8 @@ p, h1, h2, h3, h4, h5, h6, a {
   color:var(--text-color);
   font-family: "Ubuntu", serif;
 }
+
+* {
+  max-width: 100%;
+}
 </style>
