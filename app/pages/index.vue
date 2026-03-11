@@ -2,7 +2,7 @@
   <div>
 
       <div class="titre">
-        <crt>
+        <CRT>
         <p class="titre-nom">Rafaël Graff</p>
         <h1>Créer du sens<br/> dans l&apos;<span class="titre-accent">absurde</span></h1>
         <div class="titre-boutons">
@@ -10,7 +10,7 @@
           <BoutonTitre to="/profil" texte="Mon profil" />
           <BoutonTitre to="/profil" texte="Mes missions" />
         </div>
-        </crt>
+        </CRT>
       </div>
   </div>
 </template>
