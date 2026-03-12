@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/strapi', '@nuxtjs/mdc'],
   strapi: {
-    url: 'http://51.83.76.32:1337',
+    url: 'https://api.absurd.fr:1337',
       prefix: '/api',
       version: 'v5',
   }
